@@ -1,0 +1,20 @@
+Parametric Rectifier with Zener Diode
+D1 IN OUT DIODE
+D2 0 IN DIODE
+D3 0 A DIODE
+D4 A OUT DIODE
+.MODEL DIODE D TT = 5e-9
+C1 OUT 0 3000e-6
+R1 OUT 0 100
+D5 0 OUT DZ
+.MODEL DZ D BV = 5.6
+#com
+BV = breakdown voltage
+#endcom
+VIN IN A DC 5 SIN (0 10 50 0 0)
+#com
+1e-6
+1e-1
+0
+1e-6
+#endcom

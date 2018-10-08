@@ -1,0 +1,130 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      4211,        120]
+NotebookOptionsPosition[      3866,        104]
+NotebookOutlinePosition[      4227,        120]
+CellTagsIndexPosition[      4184,        117]
+WindowFrame->Normal
+ContainsDynamic->False*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Lab", " ", "4"}]], "Input",
+ CellChangeTimes->{{3.68838151277597*^9, 3.6883815159791408`*^9}, {
+  3.688381655934205*^9, 3.688381658168603*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"fa", "[", "a_", "]"}], " ", ":=", " ", 
+  RowBox[{"Module", " ", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"n", " ", "=", " ", 
+       RowBox[{"Length", " ", "[", "a", "]"}]}], ",", " ", "A", ",", " ", "B",
+       ",", " ", "k", ",", " ", "c"}], "}"}], ",", " ", 
+    RowBox[{
+     RowBox[{"B", " ", "=", " ", 
+      RowBox[{"IdentityMatrix", "[", "n", "]"}]}], ";", "\[IndentingNewLine]",
+      
+     RowBox[{"c", " ", "=", " ", 
+      RowBox[{"Table", " ", "[", 
+       RowBox[{"0", ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"k", ",", " ", "n"}], "}"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"CheckAbort", " ", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"For", "[", 
+         RowBox[{
+          RowBox[{"k", " ", "=", " ", "1"}], ",", " ", 
+          RowBox[{"k", " ", "\[LessEqual]", "n"}], ",", " ", 
+          RowBox[{"k", "++"}], ",", " ", 
+          RowBox[{
+           RowBox[{"A", " ", "=", " ", 
+            RowBox[{"a", ".", "B"}]}], ";", " ", 
+           RowBox[{
+            RowBox[{"c", "[", 
+             RowBox[{"[", "k", "]"}], "]"}], " ", "=", " ", 
+            RowBox[{
+             RowBox[{"Tr", "[", "A", "]"}], "/", "k"}]}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"B", " ", "=", " ", 
+            RowBox[{"A", " ", "-", " ", 
+             RowBox[{
+              RowBox[{"c", "[", 
+               RowBox[{"[", "k", "]"}], "]"}], "*", " ", 
+              RowBox[{"IdentityMatrix", "[", "n", "]"}]}]}]}], ";", " ", 
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{"k", " ", "\[Equal]", " ", 
+              RowBox[{"n", "-", "1"}]}], ",", " ", 
+             RowBox[{"b", " ", "=", " ", "B"}]}], "]"}]}]}], "]"}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"If", " ", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"c", "[", 
+            RowBox[{"[", "n", "]"}], "]"}], " ", "\[Equal]", " ", "0"}], ",", 
+          " ", 
+          RowBox[{"Abort", "[", "]"}]}], "]"}], ";", " ", 
+        RowBox[{"b", " ", "=", " ", 
+         RowBox[{"b", "/", 
+          RowBox[{"c", "[", 
+           RowBox[{"[", "n", "]"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"Print", "[", 
+         RowBox[{"\"\< the inverse of the matrix is: \>\"", ",", " ", 
+          RowBox[{"b", " ", "//", "MatrixForm"}]}], "]"}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Return", " ", "[", "c", "]"}]}], ",", " ", 
+       RowBox[{
+       "Print", " ", "[", "\"\< the matrix has no inverse! \>\"", "]"}]}], 
+      "]"}], ";", " ", 
+     RowBox[{"Return", " ", "[", "c", "]"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6883821671130495`*^9, 3.6883822020979586`*^9}, {
+   3.6883822368640532`*^9, 3.6883826664011316`*^9}, {3.6883831747830987`*^9, 
+   3.6883832238150225`*^9}, {3.6883832654874735`*^9, 
+   3.6883832686593885`*^9}, {3.688383321769476*^9, 3.6883833232851753`*^9}, 
+   3.6883833890517*^9, {3.6883834206458287`*^9, 3.6883834279428043`*^9}}],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.6883826783388443`*^9}]
+},
+WindowSize->{881, 807},
+WindowMargins->{{200, Automatic}, {30, Automatic}},
+Magnification->2.,
+FrontEndVersion->"6.0 for Microsoft Windows (64-bit) (June 19, 2007)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[568, 21, 167, 3, 57, "Input"],
+Cell[738, 26, 3032, 73, 466, "Input"],
+Cell[3773, 101, 89, 1, 92, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

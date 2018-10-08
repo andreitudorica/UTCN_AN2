@@ -1,0 +1,70 @@
+
+                 *********************************************
+                 *                                           *
+                 *             A I M - S p i c e             *
+                 *                                           *
+                 *             Student Version 5.9          *
+                 *                                           *
+                 *********************************************
+
+	Date: Wed Jan 11 22:44:24 2017
+	Circuit File: D:\Andrei\Scoala\adc\NANDBipolar.cir
+	Analysis: Transient
+
+**************************  Circuit Description  **************************
+
+     1:  CMOS
+     2:  .SUBCKT INV IN VDD VSS OUT
+     3:  	M1 OUT IN VSS VSS MOS1
+     4:  	.MODEL MOS1 NMOS VTO = 1.5
+     5:  	M2 OUT IN VDD VDD MOS2
+     6:  	.MODEL MOS2 PMOS VTO = -1.5
+     7:  .ENDS
+     8:  X1 IN VDD 0 OUT INV
+     9:  C1 OUT 0 0.5e-12
+    10:  VDD VDD 0 5
+    11:  VIN IN 0 DC 5 PULSE (0 5 0 1e-9 1e-9 1e-7 2e-7)
+    12:  .tran 1e-9 4e-7 0 1e-6
+
+***************************  Model Parameters  ****************************
+
+
+***************  Device Parameters (Only for .op analysis)  ***************
+
+
+
+**************************  Analysis Parameters  **************************
+
+	Stepsize ............ : 1e-9
+	Final time .......... : 4e-7
+	Display start time .. : 0
+	Maximum step size ... : 1e-6
+	Use Initial Conditions: Off
+
+
+
+**************  Options (Only those different from default)  **************
+
+
+
+*************************  Simulation Statistics  *************************
+
+	Total number of iterations.....................: 236
+	Number of iterations for transient analysis....: 230
+	Total number of timepoints.....................: 97
+	Number of timepoints accepted..................: 89
+	Number of timepoints rejected..................: 8
+	Total analysis time (sec)......................: 0.009
+	Transient analysis time (sec)..................: 0.008
+	Time spent in device loading (sec).............: 0
+	Time spent in L-U decomposition (sec)..........: 0
+	Time spent in matrix reordering (sec)..........: 0
+	Time spent in matrix solving (sec).............: 0
+	Time spent in transient L-U decomposition (sec): 0
+	Time spent in transient matrix solving (sec)...: 0
+
+***************************  Kernel Messages  *****************************
+
+Circuit: CMOS
+
+

@@ -1,0 +1,5 @@
+﻿  testMatrix.cpp
+d:\andrei\scoala\ecg\lab3\lab3\testmatrix.cpp(184): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+d:\andrei\scoala\ecg\lab3\lab3\testmatrix.cpp(184): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Lab3.vcxproj -> D:\Andrei\Scoala\ECG\Lab3\Debug\Lab3.exe
+  Lab3.vcxproj -> D:\Andrei\Scoala\ECG\Lab3\Debug\Lab3.pdb (Partial PDB)

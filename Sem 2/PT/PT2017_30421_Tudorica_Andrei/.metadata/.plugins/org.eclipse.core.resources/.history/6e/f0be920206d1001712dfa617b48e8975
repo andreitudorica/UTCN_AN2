@@ -1,0 +1,90 @@
+import java.util.*;
+
+public class SinglyListIterator<E> implements ListIterator<E> {
+	private int index;//the index (position of the iterator)
+	private Node<E> currentNode, previousNode,head;
+	//we keep in mind the previous node for the current node, so we don't have to call the previous() function in cases like the add() function
+	public SinglyListIterator(int index, Node<E> head) {
+		this.index = 1;
+		this.head=head;
+		this.currentNode = head;
+		while (this.index != index && currentNode != null)
+			this.next();//iterate to the required index
+	}
+
+	public Node<E> getCurrentNode() {
+		return this.currentNode;
+	}
+
+	@Override
+	public void add(E e) {
+		Node<E> toAdd=(Node<E>) e;
+		toAdd.setRight(currentNode);
+		this.previousNode.setRight(toAdd);
+		this.currentNode=toAdd;
+	}
+
+	@Override
+	public boolean hasNext() {
+		if (this.currentNode.getRight() != null)//if the next element is not null, it means it has next
+			return true;
+		return false;
+	}
+
+	@Override
+	public boolean hasPrevious() {
+		if (this.index>1)//if the element is on an index greater than 1, it means there is an element in front of it
+			return true;
+		return false;
+	}
+
+	@Override
+	public E next() {
+		this.previousNode = this.currentNode;//update the previous element
+		this.currentNode = (Node<E>) this.currentNode.getRight();//go to the next element
+		this.index++;//increase index
+		return (E) this.currentNode;
+	}
+
+	@Override
+	public int nextIndex() {
+		return this.index + 1;
+	}
+
+	@Override
+	public E previous() {//for this function we need to start iterating from the head until the currnet index-1
+		if (this.index != 1) {//if we are not on the first position
+			Node<E> aux=head;//we take an auxiliary node
+			int tempIndex=1;//on index 1
+			previousNode=head;//we keep track who is the previous node also, so we don't have to execute this funtion all the time
+			while(tempIndex<this.index-1)
+			{
+				previousNode=aux;
+				aux=aux.getRight();
+				currentNode=aux;
+				tempIndex++;
+			}
+			this.index--;//our index goes "one step back"
+			return (E) currentNode;
+		}
+		return null;
+	}
+
+	@Override
+	public int previousIndex() {
+		return this.index - 1;
+	}
+
+	@Override
+	public void remove() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void set(E e) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

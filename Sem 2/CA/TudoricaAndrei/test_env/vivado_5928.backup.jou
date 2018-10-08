@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Mar 09 10:44:24 2017
+# Process ID: 5928
+# Current directory: D:/30421/TudoricaAndrei/test_env
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5380 D:\30421\TudoricaAndrei\test_env\test_env.xpr
+# Log file: D:/30421/TudoricaAndrei/test_env/vivado.log
+# Journal file: D:/30421/TudoricaAndrei/test_env\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/30421/TudoricaAndrei/test_env/test_env.xpr
+close [ open D:/30421/TudoricaAndrei/test_env/test_env.srcs/sources_1/new/sevenSegment.v w ]
+add_files D:/30421/TudoricaAndrei/test_env/test_env.srcs/sources_1/new/sevenSegment.v
+close [ open D:/30421/TudoricaAndrei/test_env/test_env.srcs/sources_1/new/SSD.v w ]
+add_files D:/30421/TudoricaAndrei/test_env/test_env.srcs/sources_1/new/SSD.v
+remove_files  D:/30421/TudoricaAndrei/test_env/test_env.srcs/sources_1/new/sevenSegment.v
+remove_files  D:/30421/TudoricaAndrei/test_env/test_env.srcs/sources_1/new/SSD.v
+close [ open D:/30421/TudoricaAndrei/test_env/test_env.srcs/sources_1/new/SSD.vhd w ]
+add_files D:/30421/TudoricaAndrei/test_env/test_env.srcs/sources_1/new/SSD.vhd
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/30421/TudoricaAndrei/test_env/test_env.runs/impl_1/test_env.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {D:/30421/TudoricaAndrei/test_env/test_env.runs/impl_1/test_env.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/30421/TudoricaAndrei/test_env/test_env.runs/impl_1/test_env.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {D:/30421/TudoricaAndrei/test_env/test_env.runs/impl_1/test_env.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

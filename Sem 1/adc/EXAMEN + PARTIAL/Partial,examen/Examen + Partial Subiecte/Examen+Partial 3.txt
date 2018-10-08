@@ -1,0 +1,35 @@
+R1
+Partial 1
+T1 Circuitul rc trece-sus
+T2 Oscilator cu punte Wien
+P1 Cursul 2 problema 2
+
+Partial 2
+T1 PArametrul capacitate de incarcare a circuitelor logice: definire componente, valori caracteristice pt seriile de circuite TTl,CMOS,HCT
+P1 Sa se proiecteze un oscilator trigger Schmitt cu porti CMOS . Oscilatorul este comandat de un semnal activ 0. Perioada de oscilatie 2 ms. Portile CMOS sunt alimentate de o tensiune de 5v ( Curs 7, ultima problema )
+
+Final
+T1 CAM : arhitectura si operare
+P1 problema de la cursul 11 ultima problema dar a schimbat cate ceva portul de iesire este 101XXX...Xb Vled=1,7V , Iled=10 mA, 2 taste conectate la intrarile de intrerupere si nu a mai dat valoare pt B(beta)
+
+
+
+un rand ii postat iar pe celalalt o fost asa:
+
+partial1
+t1 tranzistor bipolar: metode de accelerare
+t2 amplificator cu castig constant
+p1 ceva problema cu un semnal treapta cu amplitudinea de 10 v. sa se calculeze timpul in care ajunge la 7v
+
+partial 2
+t1 inversor CMOS cu 3 stari
+p1 ceva problema cu o magistrala 10 OC la 2 TTL standard. impedanta magistrala 250 ohmi
+
+final
+t1 CAN cu aprox repetate si criteriul lui Nyquest 
+p1 problema cu microprocesoare
+
+
+?tie cineva cât e de regula Vbe ? 
+
+?tiu ca  e aprox Vbe aprox =  0.2V

@@ -1,0 +1,71 @@
+Turbo Assembler	 Version 3.1	    12/30/11 17:24:36	    Page 1
+2.asm
+
+
+
+      1				     ;separare siruri
+      2
+      3	0000			     data segment
+      4	0000  01 02 FD FB 02 04	     sir db 1,2,-3,-5,2,4
+      5	0006  0006		     len dw $-sir
+      6	0008  06*(??)		     SIR1 DB 6 DUP(?)
+      7	000E  06*(??)		     sir2 db 6 dup(?)
+      8	0014			     data ends
+      9	0000			     code segment
+     10				     assume cs:code, ds:data
+     11	0000  B8 0000s		     start: mov	ax,data
+     12	0003  8E D8				mov ds,ax
+     13	0005  BE 0000				mov si,0
+     14	0008  BF 0000				mov di,0
+     15	000B  BB 0000				mov bx,0
+     16
+     17
+     18	000E  8B 0E 0006r			mov cx,len
+     19	0012  80 BC 0000r 00		     et: cmp sir[si],0
+     20	0017  7C 0C				     jl	negativ
+     21	0019  8A 84 0000r			     mov al,sir[si]
+     22	001D  88 87 000Er			     mov sir2[bx],al
+     23	0021  43				     inc bx
+     24	0022  EB 0A 90				     jmp gata
+     25	0025  8A 94 0000r			     negativ: mov dl,sir[si]
+     26	0029  88 95 0008r					      mov sir1[di],dl
+     27	002D  47						      inc di
+     28	002E					 gata :
+     29	002E  46					     inc si
+     30	002F  E2 E1					     loop et
+     31
+     32
+     33	0031  B4 4C				     mov ah,4ch
+     34	0033  CD 21				     int 21h
+     35	0035			     code ends
+     36				     end start
+Turbo Assembler	 Version 3.1	    12/30/11 17:24:36	    Page 2
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "12/30/11"
+??FILENAME			  Text	 "2	  "
+??TIME				  Text	 "17:24:36"
+??VERSION			  Number 030A
+@CPU				  Text	 0101H
+@CURSEG				  Text	 CODE
+@FILENAME			  Text	 2
+@WORDSIZE			  Text	 2
+ET				  Near	 CODE:0012
+GATA				  Near	 CODE:002E
+LEN				  Word	 DATA:0006
+NEGATIV				  Near	 CODE:0025
+SIR				  Byte	 DATA:0000
+SIR1				  Byte	 DATA:0008
+SIR2				  Byte	 DATA:000E
+START				  Near	 CODE:0000
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+CODE				  16  0035 Para	  none
+DATA				  16  0014 Para	  none
+

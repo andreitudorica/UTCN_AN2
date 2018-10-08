@@ -1,0 +1,6 @@
+﻿  Source.cpp
+d:\andrei\scoala\fa\tema7_multiway_trees\tema7_multiway_trees\source.cpp(12): warning C4091: 'typedef ': ignored on left of 'nodeR2' when no variable is declared
+d:\andrei\scoala\fa\tema7_multiway_trees\tema7_multiway_trees\source.cpp(19): warning C4091: 'typedef ': ignored on left of 'nodeR3' when no variable is declared
+d:\andrei\scoala\fa\tema7_multiway_trees\tema7_multiway_trees\source.cpp(43): warning C4018: '<': signed/unsigned mismatch
+  Tema7_Multiway_Trees.vcxproj -> D:\Andrei\Scoala\FA\Tema7_Multiway_Trees\Debug\Tema7_Multiway_Trees.exe
+  Tema7_Multiway_Trees.vcxproj -> D:\Andrei\Scoala\FA\Tema7_Multiway_Trees\Debug\Tema7_Multiway_Trees.pdb (Partial PDB)

@@ -1,0 +1,32 @@
+;nr din string in int
+DATA	SEGMENT PARA PUBLIC 'DATA'
+S2 DB '20'
+LENC DW $-S2
+NUM DB 0;
+K DB 10;
+
+DATA	ENDS
+CODE		SEGMENT PARA PUBLIC 'CODE'
+		ASSUME CS:CODE, DS:DATA
+START:	MOV AX,DATA
+		MOV DS,AX;Initializarea segmentului DS
+		
+		
+		
+		MOV CX ,lenc
+		MOV SI,0
+		MOV DL,0
+		ET:
+			MOV AL,10
+			MUL DL 
+			SUB S2[SI],30H
+			ADD aL,S2[SI]
+			MOV DL,AL
+			INC SI
+		LOOP ET
+		MOV NUM,DL	
+		
+		MOV AH, 4CH	;terminarea programului 
+		INT 21H
+CODE		ENDS
+END START

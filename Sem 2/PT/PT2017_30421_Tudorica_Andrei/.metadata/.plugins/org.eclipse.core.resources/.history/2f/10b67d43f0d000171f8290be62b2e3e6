@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+public class Main {
+	public static void main(String[] args)
+	{
+		ArrayList<Node> list=new ArrayList<Node>();
+		Node n1=new Node(1,null);
+		Node n2=new Node(2,null);
+		Node n3=new Node(3,null);
+		Node n4=new Node(4,null);
+		list.add(n1);
+		list.add(n2);
+		list.add(n3);
+		list.add(n4);
+		SinglyLinkedList<Node> a=new SinglyLinkedList<Node>(list);
+
+		System.out.println(a.getHead().toString());
+		System.out.println(a.size());
+	}
+	
+}

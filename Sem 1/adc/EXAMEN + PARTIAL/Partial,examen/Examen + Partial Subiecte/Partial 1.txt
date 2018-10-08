@@ -1,0 +1,15 @@
+1. Oscilatorul Wien
+2. MOS / Tranzistor cu efect de camp
+3. TTL
+4. Tranzistor bipolar
+5. Amplificator ... fara eroare
+6. 
+
+
+
+PB:
+- Curs 1 pb cu Treapta
+- Curs 4 pb 4,5
+- CUrs 4 pb cu diodele luminoase
+- ...
+

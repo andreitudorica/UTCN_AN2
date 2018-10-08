@@ -1,0 +1,45 @@
+PARTIAL
+1) RC high pass filter
+2) Wien bridge oscillator
+3) Constant gain OpAmp
+4) 3-state CMOS inverter
+5) The ‘noise margin’ parameter: definition, components, characteristic 
+values for different IC families.
+6) Operational amplifiers: symbol, characteristics, negative feedback, 
+types of opamps
+7) CMOS inverter (layout, operation, design considerations)
+8) Methods to reduce the switching time for a bipolar transistor
+9) Propagation delay: definition, components, standard values for different  integrated circuit families
+10) Voltage regulator with negative feedback and without error amplifier
+11) Dynamic NMOS Inverter (layout, operation)
+12) The Field Effect Transistor: components, analysis of the three operating regions
+13) Power Dissipation
+14) Calculate the time needed for output signal to reach certain value.
+
+FINAL
+1) REPROM : floating gate, programming &erasing 
+2) base driven flip flop separate path
+3) diagrama &port 0 la microcontroler
+se cere: reset, quartz oscilator, 8k*8 external data memory 
+de la adresa 8000h,output port la adresa 101xxxx...xb care au 
+conectate dou 7 segments LED display , doar internal program memory
+4) Base-driven flip-flop using common path
+5) TTL gate with open collector(layout,operation,calculus of Rc)
+6) SRAM cell with NMOS
+7) Microcontroller:
+a) block diagram and function of pins ALE, RD\, WR\, PSEN\
+b) Design: oscillator, reset circuit, 8k*8 external program memory at
+address 0000H, ouput port at address xx011x...xb having connected two
+common-cathod LED displays
+8) The ‘noise margin’ parameter: definition, components, characteristic values for different IC families.(curs4 pg9+27)
+9) Monostable circuit with CMOS gates: layout, behavior, graphics, unstable state period. (curs 9 pg9)
+10) Binary and ternary CAM cell: layout, behavior.(curs 10 pg 15-21)
+11) Design a microsystem with 80C51 microcontroller having the following blocks: 12 MHz quartz oscillator, reset circuit, two 7-segments common cathode LED displays at 0XXXH and 2 keys connected to INT0\ and INT1\. The microcontroller uses only the internal program memory.(curs 12 pg 30- 31)
+12) Design a delay circuit with TTL gates Schmitt Trigger that delays the negative edge of the input signal with 0,5 ms. What value will have the delay of the negative edge? (layout, graphics, calculus)(curs 7 pg 13)
+13) CAM : layout, operation
+14) Three state MOS
+
+
+
+
+

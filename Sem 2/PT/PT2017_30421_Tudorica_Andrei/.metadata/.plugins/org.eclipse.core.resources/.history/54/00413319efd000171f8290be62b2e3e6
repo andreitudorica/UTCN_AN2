@@ -1,0 +1,65 @@
+import java.util.*;
+@SuppressWarnings("hiding")
+public class SinglyListIterator<Node> implements ListIterator<Node> {
+	private int index;
+	private Node currentNode,previousNode;
+	public  SinglyListIterator(int index,Node head) {
+		this.index=index;
+		this.currentNode=head;
+		this.previousNode=null;
+	}
+	
+	@Override
+	public void add(Node e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean hasNext() {
+		if(this.currentNode.getRight()!=null)
+			return true;
+		return false;
+	}
+
+	@Override
+	public boolean hasPrevious() {
+		return false;
+	}
+
+	@Override
+	public Node next() {
+		this.previousNode=this.currentNode;
+		this.currentNode=this.currentNode.getRight();
+		this.index++;
+		return this.currentNode;
+	}
+
+	@Override
+	public int nextIndex() {
+		return this.index+1;
+	}
+
+	@Override
+	public Node previous() {
+		return null;
+	}
+
+	@Override
+	public int previousIndex() {
+		return this.index-1;
+	}
+
+	@Override
+	public void remove() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void set(Node e) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

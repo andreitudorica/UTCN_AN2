@@ -1,0 +1,7 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (EGC_Lab5.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  stdafx.cpp
+  EGC_Lab7.cpp
+d:\andrei\scoala\ecg\lab7\egc_lab5\egc_lab7.cpp(172): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Generating Code...
+  EGC_Lab5.vcxproj -> D:\Andrei\Scoala\ECG\Lab7\Debug\EGC_Lab7.exe
+  EGC_Lab5.vcxproj -> D:\Andrei\Scoala\ECG\Lab7\Debug\EGC_Lab7.pdb (Full PDB)

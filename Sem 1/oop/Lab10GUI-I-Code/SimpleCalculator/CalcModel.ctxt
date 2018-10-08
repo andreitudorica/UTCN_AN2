@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CalcModel()
+comment0.text=Constructor
+comment1.params=
+comment1.target=void\ reset()
+comment1.text=Reset\ to\ initial\ value.
+comment2.params=operand
+comment2.target=void\ multiplyBy(java.lang.String)
+comment2.text=\ Multiply\ current\ total\ by\ a\ number.\r\n@param\ operand\ Number\ (as\ string)\ to\ multiply\ total\ by.\r\n
+comment3.params=value
+comment3.target=void\ setValue(java.lang.String)
+comment3.text=\ Set\ the\ total\ value.\ \r\n@param\ value\ New\ value\ that\ should\ be\ used\ for\ the\ calculator\ total.\ \r\n
+comment4.params=
+comment4.target=java.lang.String\ getValue()
+comment4.text=Return\ current\ calculator\ total.
+numComments=5

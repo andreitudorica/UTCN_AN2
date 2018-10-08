@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 02 17:54:31 2017
+# Process ID: 9040
+# Current directory: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8432 D:\Andrei\Scoala\CA\TudoricaAndrei\test_env\test_env.xpr
+# Log file: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/vivado.log
+# Journal file: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.xpr
+open_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+connect_hw_server
+open_hw_target
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

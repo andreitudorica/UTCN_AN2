@@ -1,0 +1,18 @@
+Inverter with bipolar transistor
+R1 IN A 1E3
+RB A EB 7E3
+C1 IN A 1p
+RC EC OUT 1E3
+C2 OUT 0 15p
+Q1 OUT A 0 TRANSISTOR
+.MODEL TRANSISTOR NPN TR = 5E-9 TF = 8E-9
+VIN IN 0 DC 5 PULSE (0 5 0 1E-9 1E-9 0.1e-6 0.2E-6)
+V1 EB 0 DC -1
+V2 EC 0 DC 5
+
+#com
+1e-6
+1e-6
+0
+1e-6
+#endcom

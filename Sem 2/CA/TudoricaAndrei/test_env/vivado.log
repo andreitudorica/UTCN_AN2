@@ -1,0 +1,122 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 02 17:54:31 2017
+# Process ID: 9040
+# Current directory: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8432 D:\Andrei\Scoala\CA\TudoricaAndrei\test_env\test_env.xpr
+# Log file: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/vivado.log
+# Journal file: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/zenbookx/Documents/Facultate/An II/Semestrul II/CA/TudoricaAndrei/TudoricaAndrei/test_env' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 02 18:37:43 2017] Launched impl_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/impl_1/runme.log
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183736522A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183736522A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183736522A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 02 18:53:31 2017] Launched synth_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/synth_1/runme.log
+[Tue May 02 18:53:31 2017] Launched impl_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 02 19:10:12 2017] Launched synth_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/synth_1/runme.log
+[Tue May 02 19:10:12 2017] Launched impl_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 02 19:28:09 2017] Launched synth_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/synth_1/runme.log
+[Tue May 02 19:28:09 2017] Launched impl_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 02 20:44:57 2017] Launched synth_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/synth_1/runme.log
+[Tue May 02 20:44:57 2017] Launched impl_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 02 20:49:25 2017] Launched synth_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/synth_1/runme.log
+[Tue May 02 20:49:25 2017] Launched impl_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 02 20:53:19 2017] Launched synth_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/synth_1/runme.log
+[Tue May 02 20:53:19 2017] Launched impl_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 02 20:56:09 2017] Launched synth_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/synth_1/runme.log
+[Tue May 02 20:56:09 2017] Launched impl_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 02 20:57:21 2017] Launched synth_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/synth_1/runme.log
+[Tue May 02 20:57:21 2017] Launched impl_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 02 21:08:16 2017] Launched synth_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/synth_1/runme.log
+[Tue May 02 21:08:16 2017] Launched impl_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 02 21:13:58 2017] Launched synth_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/synth_1/runme.log
+[Tue May 02 21:13:58 2017] Launched impl_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 02 21:24:14 2017] Launched synth_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/synth_1/runme.log
+[Tue May 02 21:24:14 2017] Launched impl_1...
+Run output will be captured here: D:/Andrei/Scoala/CA/TudoricaAndrei/test_env/test_env.runs/impl_1/runme.log
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210183736522A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183736522A

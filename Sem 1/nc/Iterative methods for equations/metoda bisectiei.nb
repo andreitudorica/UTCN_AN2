@@ -1,0 +1,127 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      3697,        118]
+NotebookOptionsPosition[      3275,         99]
+NotebookOutlinePosition[      3617,        114]
+CellTagsIndexPosition[      3574,        111]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", "x_", "]"}], "=", 
+   RowBox[{
+    RowBox[{"x", "^", "5"}], "-", 
+    RowBox[{"7", "*", "x"}], "+", "4"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"iterations", "=", "0"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.6907205083648677`*^9, 3.6907205800034733`*^9}, {
+  3.690720612215225*^9, 3.6907206167147784`*^9}, {3.690721093633218*^9, 
+  3.6907210938281603`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", "1"}], ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.690720627008403*^9, 3.690720641351907*^9}, {
+   3.690720881826633*^9, 3.690720909976615*^9}, {3.6907210462142196`*^9, 
+   3.690721048773732*^9}, 3.6907211037365274`*^9, {3.6907211458884883`*^9, 
+   3.690721151140174*^9}, {3.690721271038607*^9, 3.6907212728710585`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"While", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Abs", "[", 
+     RowBox[{
+      RowBox[{"f", "[", "a", "]"}], "-", 
+      RowBox[{"f", "[", "b", "]"}]}], "]"}], ">", 
+    RowBox[{"10", "^", 
+     RowBox[{"-", "10"}]}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"iterations", "++"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"f", "[", "a", "]"}], "*", 
+        RowBox[{"f", "[", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"a", "+", "b"}], ")"}], "/", "2"}], "]"}]}], "<", "0"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"b", "=", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"a", "+", "b"}], ")"}], "/", "2"}]}], ";"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"a", "=", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"a", "+", "b"}], ")"}], "/", "2"}]}]}], "]"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.6907206061419916`*^9, 3.69072063002015*^9}, {
+  3.6907206626248627`*^9, 3.690720695119991*^9}, {3.690720731636775*^9, 
+  3.6907208590954676`*^9}, {3.6907209410339427`*^9, 3.690720945449045*^9}, {
+  3.6907210379393735`*^9, 3.6907210401893964`*^9}, {3.6907212764155035`*^9, 
+  3.69072130904815*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<iterations:\>\"", ",", "iterations"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.690720951335668*^9, 3.6907209864738483`*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"iterations:\"\>", "\[InvisibleSpace]", "36"}],
+  SequenceForm["iterations:", 36],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.690720987163001*^9, 3.690721015995925*^9}, 
+   3.6907211995342875`*^9, 3.690721317890783*^9}]
+}, Open  ]]
+},
+WindowSize->{707, 816},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 432, 11, 52, "Input"],
+Cell[992, 33, 452, 8, 72, "Input"],
+Cell[1447, 43, 1295, 37, 112, "Input"],
+Cell[CellGroupData[{
+Cell[2767, 84, 213, 4, 52, "Input"],
+Cell[2983, 90, 276, 6, 23, "Print"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

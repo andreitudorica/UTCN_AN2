@@ -1,0 +1,46 @@
+Apr 14, 2017 8:21:06 PM Shop$1 run
+INFO: Queue simulation
+Apr 14, 2017 8:21:06 PM Shop addClient
+INFO: A new client joined queue:0 at momment:0
+Apr 14, 2017 8:21:10 PM Shop addClient
+INFO: A new client joined queue:1 at momment:4
+Apr 14, 2017 8:21:14 PM Shop addClient
+INFO: A new client joined queue:2 at momment:8
+Apr 14, 2017 8:21:18 PM Shop addClient
+INFO: A new client joined queue:3 at momment:12
+Apr 14, 2017 8:21:22 PM Shop addClient
+INFO: A new client joined queue:0 at momment:16
+Apr 14, 2017 8:21:22 PM Queue next_time
+INFO: A client left queue:0 at momment:16
+Apr 14, 2017 8:21:26 PM Shop addClient
+INFO: A new client joined queue:2 at momment:20
+Apr 14, 2017 8:21:28 PM Queue next_time
+INFO: A client left queue:2 at momment:22
+Apr 14, 2017 8:21:29 PM Queue next_time
+INFO: A client left queue:1 at momment:23
+Apr 14, 2017 8:21:30 PM Shop addClient
+INFO: A new client joined queue:1 at momment:24
+Apr 14, 2017 8:21:34 PM Shop addClient
+INFO: A new client joined queue:0 at momment:28
+Apr 14, 2017 8:21:36 PM Queue next_time
+INFO: A client left queue:0 at momment:30
+Apr 14, 2017 8:21:37 PM Queue next_time
+INFO: A client left queue:3 at momment:31
+Apr 14, 2017 8:21:38 PM Shop addClient
+INFO: A new client joined queue:3 at momment:32
+Apr 14, 2017 8:21:39 PM Queue next_time
+INFO: A client left queue:2 at momment:33
+Apr 14, 2017 8:21:42 PM Shop addClient
+INFO: A new client joined queue:2 at momment:36
+Apr 14, 2017 8:21:46 PM Shop addClient
+INFO: A new client joined queue:1 at momment:40
+Apr 14, 2017 8:21:49 PM Queue next_time
+INFO: A client left queue:1 at momment:43
+Apr 14, 2017 8:21:50 PM Shop addClient
+INFO: A new client joined queue:0 at momment:44
+Apr 14, 2017 8:21:50 PM Queue next_time
+INFO: A client left queue:0 at momment:44
+Apr 14, 2017 8:21:53 PM Queue next_time
+INFO: A client left queue:2 at momment:47
+Apr 14, 2017 8:21:53 PM Queue next_time
+INFO: A client left queue:3 at momment:47

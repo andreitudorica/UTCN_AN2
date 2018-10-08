@@ -1,0 +1,13 @@
+﻿  Source.cpp
+d:\andrei\scoala\fa\tema5_hash_tables\tema5_hash_tables\source.cpp(73): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+d:\andrei\scoala\fa\tema5_hash_tables\tema5_hash_tables\source.cpp(108): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+d:\andrei\scoala\fa\tema5_hash_tables\tema5_hash_tables\source.cpp(109): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+d:\andrei\scoala\fa\tema5_hash_tables\tema5_hash_tables\source.cpp(110): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+d:\andrei\scoala\fa\tema5_hash_tables\tema5_hash_tables\source.cpp(111): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+d:\andrei\scoala\fa\tema5_hash_tables\tema5_hash_tables\source.cpp(115): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+d:\andrei\scoala\fa\tema5_hash_tables\tema5_hash_tables\source.cpp(149): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+d:\andrei\scoala\fa\tema5_hash_tables\tema5_hash_tables\source.cpp(150): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+d:\andrei\scoala\fa\tema5_hash_tables\tema5_hash_tables\source.cpp(151): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+d:\andrei\scoala\fa\tema5_hash_tables\tema5_hash_tables\source.cpp(152): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Tema5_Hash_tables.vcxproj -> D:\Andrei\Scoala\FA\Tema5_Hash_tables\Debug\Tema5_Hash_tables.exe
+  Tema5_Hash_tables.vcxproj -> D:\Andrei\Scoala\FA\Tema5_Hash_tables\Debug\Tema5_Hash_tables.pdb (Partial PDB)

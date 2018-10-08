@@ -1,0 +1,24 @@
+NAND NMOS
+  
+  M1 OUT A N1 N1 NMOS1 W=1u L=1u
+  M2 VDD VGG OUT OUT NMOS1 W=1u L=50u
+  M3 N1 B 0 0 NMOS1 W=1u L=1u
+  .MODEL NMOS1 NMOS VTO=1.5
+  
+  C1 OUT 0 15e-12
+  VGG VGG 0 4.5
+  VDD VDD 0 3
+ 
+  *DC MODE
+  *VA A 0 DC 5
+  *VB B 0 DC 5
+  
+  *AC MODE
+  VA A 0 DC 5
+  VB B 0 PULSE(0 3 0 1e-10 1e-10 1e-4 2e-4)
+#com
+1e-9
+1e-3
+0
+1e-6
+#endcom

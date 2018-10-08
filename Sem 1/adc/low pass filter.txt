@@ -1,0 +1,12 @@
+high pass filter
+R IN OUT 1e3
+C OUT 0 470e-9
+
+VIN IN 0 DC 5 PULSE (0 5 0 1e-10 1e-10 0.5e-3 1e-3)
+
+#com
+1e-6
+3e-3
+0
+1e-6
+#endcom

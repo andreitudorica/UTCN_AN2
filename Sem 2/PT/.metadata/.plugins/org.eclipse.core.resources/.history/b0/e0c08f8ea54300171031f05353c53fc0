@@ -1,0 +1,82 @@
+import java.awt.List;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.sql.Time;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.LongSummaryStatistics;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import org.joda.time.DateTime;
+
+public class Main {
+	public static void main(String args[]) {
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String fileName = "D://Andrei/Scoala/PT2017_30421_Tudorica_Andrei/Activities.txt";
+		ArrayList<MonitoredData> monitoredData=new ArrayList<MonitoredData>();
+		ArrayList<String> list=new ArrayList<>();
+		try {
+			list=(ArrayList<String>) Files.lines(Paths.get(fileName)).collect(Collectors.toList());
+			//monitoredData=list.stream().forEach(String::split(" "));
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+		for(String s:list)
+		{
+			MonitoredData m=new MonitoredData();
+			String[] splitted=s.split(" |\\t");
+			Date d;
+			/*for(String sp:splitted)
+				System.out.println(sp);*/
+			try {
+				d = formatter.parse(splitted[0]+" "+splitted[1]);
+				m.setStartTime(new DateTime(d));
+				d = formatter.parse(splitted[3]+" "+splitted[4]);
+				m.setEndTime(new DateTime(d));
+				m.setActivityLable(splitted[6]);
+				monitoredData.add(m);
+			} catch (ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		ArrayList<Integer> Times=(ArrayList<Integer>) monitoredData.stream().map(m-> new Integer(m.getStartTime().getDayOfYear())).collect(Collectors.toList());//get start times
+		monitoredData.stream().map(m->m.getEndTime().getDayOfYear()).collect(Collectors.toCollection(() -> Times));//add End times
+		System.out.println( Times.stream().distinct().count());//Ex 1
+		
+		Map<String, Long> counters = monitoredData.stream().collect(Collectors.groupingBy(m -> m.getActivityLable(),  Collectors.counting())); //ex 2
+		
+		for (Map.Entry entry : counters.entrySet()) {
+		    System.out.println(entry.getKey() + ", " + entry.getValue());
+		}
+		
+		Map<Object,Map<Object,Long>> ex3=monitoredData.stream().collect
+				(
+						Collectors.groupingBy
+						(
+							m->new Integer( Times.stream().distinct().filter(t->t.equals(m.getStartTime().getDayOfYear())).collect(Collectors.toList()).get(0)),
+							Collectors.groupingBy(m->m.getActivityLable(),  Collectors.counting())
+						)
+				);
+		for (Map.Entry entry : ex3.entrySet()) {
+		    System.out.println(entry.getKey().toString() + ", " + entry.getValue()); 
+		}//Ex3
+		
+		Map<Object, LongSummaryStatistics> ex4=monitoredData.stream().collect(Collectors.groupingBy(m->m.getActivityLable(),Collectors.summarizingLong(t->t.getEndTime().getMillis()-t.getStartTime().getMillis())));
+		for (Map.Entry entry : ex4.entrySet()) {
+			if(((LongSummaryStatistics)entry.getValue()).getSum()>36000000)
+				System.out.println(entry.getKey().toString() + ", " + ((LongSummaryStatistics)entry.getValue()).getSum()/60000+" minutes"); 
+		}//Ex3
+	}
+}

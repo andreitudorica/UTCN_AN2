@@ -1,0 +1,11 @@
+mono alternating rectifier
+D1 IN OUT DIODE
+.MODEL DIODE D TT = 5e-9
+R1 OUT 0 100
+VIN IN 0 DC 5 SIN (0 10 50 0 0)
+#com
+1e-6
+1e-1
+0
+1e-6
+#endcom

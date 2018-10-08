@@ -1,0 +1,7 @@
+The recipt for AAA BBB
+cola--------3.0
+fanta--------4.0
+cola--------3.0
+cola--------3.0
+cola--------3.0
+TOTAL PAYMENT--------16.0

@@ -1,0 +1,15 @@
+Filter Rectifier
+.MODEL DIODE D TT = 5e-9
+D1 IN OUT DIODE
+D2 0 IN DIODE
+D3 0 A DIODE
+D4 A OUT DIODE
+C1 OUT 0 3000e-6
+R1 OUT 0 100
+VIN IN A DC 5 SIN (0 10 50 0 0)
+#com
+1e-6
+1e-1
+0
+1e-6
+#endcom

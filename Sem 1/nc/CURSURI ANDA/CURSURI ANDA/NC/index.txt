@@ -1,0 +1,20 @@
+1. Strictly diagonally dominant matrix is nonsingular
+2. Strictly diagonally dominant matrix is nonsingular
+3. If A is symetric and positive defined: nonsingular, akk>0
+4. If A is symetric and positive defined: max |akj|<max|aii|
+5. ||A||inf = max Sum(aij)
+6. eigenvalues
+7. eigenvalues & ||A||2=SQRT(ro(AtA))
+8. Jacobi's iterative method
+9. Gauss-Seidel iterative method
+10. F derivat de p ori something
+11. Newton-Raphson method
+12. Chebyshev
+13. Popoviciu-Lebnitz Formula
+14. Lagrange error formula
+15. Hermite-Lagrange Interpolating Polynomial
+16. divided difference x^k/(a-x)
+17. L[x^(n+1)/x+-1]
+18. same
+19. [x^k] k=n,n+1,n+2
+

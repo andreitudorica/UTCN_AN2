@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar 15 20:18:15 2017
+# Process ID: 13496
+# Current directory: C:/Users/Andrei/Desktop/TudoricaAndrei/test_env
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7924 C:\Users\Andrei\Desktop\TudoricaAndrei\test_env\test_env.xpr
+# Log file: C:/Users/Andrei/Desktop/TudoricaAndrei/test_env/vivado.log
+# Journal file: C:/Users/Andrei/Desktop/TudoricaAndrei/test_env\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Andrei/Desktop/TudoricaAndrei/test_env/test_env.xpr
+INFO: [Project 1-313] Project file moved from 'D:/30421/TudoricaAndrei/test_env' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 781.230 ; gain = 102.969
+open_hw

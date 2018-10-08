@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Apr 20 06:31:30 2017
+# Process ID: 10272
+# Current directory: F:/TudoricaAndrei/TudoricaAndrei/test_env
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8856 F:\TudoricaAndrei\TudoricaAndrei\test_env\test_env.xpr
+# Log file: F:/TudoricaAndrei/TudoricaAndrei/test_env/vivado.log
+# Journal file: F:/TudoricaAndrei/TudoricaAndrei/test_env\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/TudoricaAndrei/TudoricaAndrei/test_env/test_env.xpr

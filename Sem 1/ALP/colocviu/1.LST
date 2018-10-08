@@ -1,0 +1,66 @@
+Turbo Assembler	 Version 3.1	    12/30/11 17:20:14	    Page 1
+1.asm
+
+
+
+      1				     ;Suma unui	vector,	media
+      2	0000			     data segment
+      3	0000  01 02 03		     sir db 1,2,3
+      4	0003  02*(02*(0010))	     sir2 dw 2 dup( 2 dup(10h))
+      5	000B  00000001 00000002	  +  b dd 1,2,3,4,5,6,7,8,9
+      6	      00000003 00000004	  +
+      7	      00000005 00000006	  +
+      8	      00000007 00000008	  +
+      9	      00000009
+     10	002F  002F		     len dw $-sir
+     11	0031  03		     a db 3
+     12	0032			     data ends
+     13	0000			     code segment
+     14				     assume cs:code, ds:data
+     15	0000  B8 0000s		     start: mov	ax,data
+     16	0003  8E D8				mov ds,ax
+     17	0005  B8 0000				mov ax,0
+     18	0008  8B 0E 002Fr			mov cx,len
+     19	000C  BE 0000				mov si,0
+     20	000F  B0 00				mov al,0
+     21	0011  02 84 0000r	     et:    add	al,sir[si]
+     22	0015  46				inc si
+     23	0016  E2 F9				loop et
+     24	0018  F6 36 0031r			div a
+     25
+     26
+     27
+     28
+     29	001C  B4 4C			     mov ah,4ch
+     30	001E  CD 21			     int 21h
+     31	0020			     code ends
+     32				     end start
+Turbo Assembler	 Version 3.1	    12/30/11 17:20:14	    Page 2
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "12/30/11"
+??FILENAME			  Text	 "1	  "
+??TIME				  Text	 "17:20:14"
+??VERSION			  Number 030A
+@CPU				  Text	 0101H
+@CURSEG				  Text	 CODE
+@FILENAME			  Text	 1
+@WORDSIZE			  Text	 2
+A				  Byte	 DATA:0031
+B				  Dword	 DATA:000B
+ET				  Near	 CODE:0011
+LEN				  Word	 DATA:002F
+SIR				  Byte	 DATA:0000
+SIR2				  Word	 DATA:0003
+START				  Near	 CODE:0000
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+CODE				  16  0020 Para	  none
+DATA				  16  0032 Para	  none
+

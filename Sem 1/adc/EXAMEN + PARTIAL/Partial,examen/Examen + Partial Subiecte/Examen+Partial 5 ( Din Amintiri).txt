@@ -1,0 +1,12 @@
+p1
+tranzistor MOS	
+stabilizator .... cu amplificator fara eroare sau cu eroare
+370 nF  de la 10 V la 4 V
+Se considera un filtru trece sus. Componentele circuitului au urmatoarele valori: R=10k?, C=100nF. La intrarea acestui circuit este aplicat un semnal treapta avand amplitudinea egala cu 5V. Sa se calculeze timpul necesar raspunsului pentru a ajunge la valoarea 2V.
+
+
+
+
+p2
+marginea crescatoare  Marginile de imunitate la perturbaþiile statice
+Sa se proiecteze un circuit care comanda un LED folosind o poarta SI-NU TTL standard. Pentru LED se considera urmatoarele valori: VLED=1,6V si ILED=10mA

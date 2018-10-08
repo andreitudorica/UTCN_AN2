@@ -1,0 +1,59 @@
+import java.util.*;
+
+public class SinglyLinkedList<E> extends AbstractSequentialList<E> {
+
+	private Node<E> head, tail;
+	private int size;
+
+	public SinglyLinkedList() {
+		this.head = null;
+		this.tail = null;
+		this.size = 0;
+	}
+
+	public SinglyLinkedList(Collection<E> c) {
+		for (E element : c) {
+			this.add(element);//add each element of the collection in the linked list
+		}
+	}
+
+	public Node<E> getHead() {
+		return this.head;
+	}
+
+	@Override
+	public boolean add(E element) {
+		Node<E> newNode = new Node<E>(element, null);
+		if (this.head == null)//if there is no head it means the list is empty
+			this.head = this.tail = newNode;//so the element we try to add is both the head and the tail 
+		else {
+			this.tail.setRight(newNode); //otherwise we link the tail to the new element
+			this.tail = newNode;//and the last element is now the one we added
+		}
+		this.size++;//the size increases
+		return true;
+	}
+
+	@Override
+	public ListIterator<E> listIterator(int index) {
+		ListIterator<E> li = new SinglyListIterator(index, this.head);//create a new iterator at the required index
+		return li;
+	}
+    // function to test the behaviour of the iterator
+	public void testIterator() {
+		SinglyListIterator<E> li = (SinglyListIterator<E>) listIterator(3);//initialize an iterator on position 3
+		Node<String> toAdd=new Node<String>("andrei",null);//add a string node on that position
+		li.add((E)toAdd);//add the string o the list
+		Node<Double> toAdd1=new Node<Double>(1.15,null);//create a node with the content of type Double
+		li = (SinglyListIterator<E>) listIterator(6);//move the iterator to the 6th position
+		li.previous();//move it back one position (so now it is on position 5)
+		li.add((E)toAdd1);//add the node
+		System.out.println(this.head.toString());//print the list
+	}
+
+	@Override
+	public int size() {
+		return this.size;
+	}
+
+}

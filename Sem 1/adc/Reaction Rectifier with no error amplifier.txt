@@ -1,0 +1,23 @@
+Reaction Rectifier with no error amplifier
+D1 IN C DIODE
+D2 0 IN DIODE
+D3 0 A DIODE
+D4 A C DIODE
+.MODEL DIODE D TT = 5e-9
+C1 C 0 3000e-6
+R1 C VZ 300
+Q1 C VZ OUT TRANSISTOR
+D5 0 VZ DZ
+.MODEL TRANSISTOR NPN TR = 5e-9 TF = 8e-9
+.MODEL DZ D BV = 5.6
+VIN IN A DC 5 SIN (0 10 50 0 0)
+#com
+- always have to start with Q
+- C = collector; VZ = base; OUT = emitter;
+#endcom
+#com
+1e-6
+1e-1
+0
+1e-6
+#endcom

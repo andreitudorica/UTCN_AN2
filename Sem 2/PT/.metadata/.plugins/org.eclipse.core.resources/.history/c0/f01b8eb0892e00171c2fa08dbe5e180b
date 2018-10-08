@@ -1,0 +1,57 @@
+package AccountPackage;
+
+public class SavingAccount extends Account {
+	
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public SavingAccount(int id, double interest, int fixedSum,int years) {
+		super(0, id);
+		this.interest = interest;
+		this.fixedSum = fixedSum;
+		this.depositDone = false;
+		this.withdrawalDone = false;
+		this.years=years;
+	}
+
+	public double getFinalSum()
+	{
+		double fs=(double)this.getSum();
+		for(int i=1;i<=this.years;i++)
+			fs+=fs*this.interest;
+		return fs;
+	}
+
+	@Override
+	public String deposit(int sum) {
+		if (this.depositDone == true)
+			return "Deposit on account " + this.getId() + " has already been done!";
+		if(sum!=fixedSum)
+			return "The specified sum is not valid for this saving account. It must be "+ this.fixedSum;
+		this.setSum(sum);
+		this.setChanged();
+		this.notifyObservers("In your account "+this.getId()+" the sum "+sum+" has been deposited.");
+		this.depositDone = true;
+		return "Sum " + sum + " has been added to the SAVING account " + this.getId();
+	}
+
+	@Override
+	public String withdraw(int sum) {
+		if(sum!=fixedSum)
+			return "The specified sum is not valid for this saving account. It must be "+ this.fixedSum;
+		if (this.depositDone != true)
+			return "Withdrawal on account " + this.getId() + " is empty!";
+		if (this.withdrawalDone == true)
+			return "Withdrawal on account " + this.getId() + " has already been done!";
+
+		this.setChanged();
+		this.notifyObservers("From your account " + this.getId() + " the sum " + sum + " has been withdrawn.");
+		String ret="the sum "+this.getFinalSum()+ " has been withdrawn from account " + this.getId();
+		this.setSum(0);
+		this.withdrawalDone=true;
+		return ret;
+	}
+}

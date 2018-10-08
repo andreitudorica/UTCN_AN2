@@ -1,0 +1,49 @@
+o teorie: au fost 4 randuri:
+1. trigger Schmitt ttl
+2. master slave
+3. cba
+4. dram
+doua probleme:
+una cu microcontroller pe toate randurile
+una dintre acelea mai simple care sunt in curs
+
+1. Dioda semiconductoare (C2)
+2. Amplificatoare operationale (C3)
+3. Filtre (C1)
+4. Margini de imunitate (C4)
+
+Randul 1
+ 
+T1. dioda semiconductoare
+T2. CBA cu circuite TTL
+T3. ADC (in romaneste CAN) cu aproximari succesive
+P1. a) pinii EA,PSEN, RD, WR, EA, b) microcontroller , ceva memorii 8 kB , nu m stiu exact
+P2. circ de intarziere cu Trigger Schmitt, sa produca o intarziere de 0,1 ms 
+
+R2:
+1. Trigger Schmidt cu TTL
+2. Poarta SI-NU open collector
+3. Sa se comande un LED cu CMOS
+4. Micrcontroller cu memorie externa de date(pb)
+5. Porturile microcontrollerului
+
+Randul 3 (singurul care mai lipsea..)
+T1. Stabilizator cu reactie fara amplificator de eroare
+T2. Capacitati de incarcare ale circuitelor integrate: def,valori pt
+diferite serii de circ TLL, (parca si scheme).
+T3. CBB RS master-slave
+P1. a) microcontroller 80C51 - ceva cu ciclul de citire &#351;i
+      configuratia memoriei de program externe 
+    b) microcontroller adresa
+     x01x...xb , 8 taste frecventa 12 Mhz.. ceva cerinte k si la celelalte
+     randuri.
+P2. Proiectati o magistrala cu open-collector si se dadea acolo o
+impedanta Z=150 ohmi. scheme,functionare, calcul
+
+R4:
+t1. oscilator cu punte wien
+t2. inversor nmos static
+t3. dram mos cu un tranzistor
+p1. probl cu microcontroller, osc cu cuart, reset, port de iesire care comanda 2 afisaje cu LEDuri 7 segm
+p2. val max a rezistentei care poate fi pusa intre 2 porti ttl fara sa influenteze functioarea circuitului si cum
+   infl rez marginea de zgomot

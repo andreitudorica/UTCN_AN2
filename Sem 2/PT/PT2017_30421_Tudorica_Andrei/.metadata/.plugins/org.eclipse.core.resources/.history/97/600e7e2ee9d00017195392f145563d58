@@ -1,0 +1,52 @@
+import java.util.*;
+public class SinglyLinkedList<E> extends AbstractSequentialList<E>{
+
+	private Node head,tail;
+	private int size;
+	
+	public SinglyLinkedList() {
+		this.head=null;
+		this.tail=null;
+		this.size=0;
+	}
+	
+	public SinglyLinkedList(Collection<E> c)
+	{
+		for (E element : c) {
+			this.add(element);
+		}
+	}
+ 
+	public Node getHead(){
+		return this.head;
+	}
+
+	@Override
+	public boolean add(E element)
+	{
+		Node newNode=new Node(element, null);
+		Node aux;
+		if(this.head == null)
+			this.head=this.tail=newNode;
+		else
+		{
+			this.tail.setRight(newNode);
+			aux=this.tail;
+			this.tail=newNode;
+		}
+		this.size++;
+		return true;
+	}
+	
+	@Override
+	public ListIterator<E> listIterator(int index) {
+		ListIterator<E> li=new SinglyListIterator<E>();
+		return li;
+	}
+
+	@Override
+	public int size() {
+		return this.size;
+	}
+
+}
